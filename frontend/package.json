@@ -4,10 +4,17 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+        "test": "jest",
         "dev": "next",
         "build": "next build",
         "flow": "flow",
         "start": "next start"
+    },
+    "jest": {
+        "setupFiles": [
+            "<rootDir>/shim.js",
+            "<rootDir>/setupTests.js"
+        ]
     },
     "author": "",
     "license": "ISC",
@@ -21,6 +28,11 @@
     "devDependencies": {
         "babel-eslint": "^8.0.2",
         "babel-plugin-transform-flow-strip-types": "^6.22.0",
-        "flow-bin": "^0.59.0"
+        "enzyme": "^3.2.0",
+        "enzyme-adapter-react-16": "^1.1.0",
+        "flow-bin": "^0.59.0",
+        "jest": "^21.2.1",
+        "react-addons-test-utils": "^15.6.2",
+        "react-test-renderer": "^16.1.1"
     }
 }
