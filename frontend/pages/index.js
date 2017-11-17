@@ -9,8 +9,10 @@ const Title = styled.h1`
     font-size: 50px;
 `;
 
+Title.displayName = 'Title';
+
 export default () => (
     <Layout>
-        <div>Hello World!</div>
+        <Title>Hello World!</Title>
     </Layout>
 );

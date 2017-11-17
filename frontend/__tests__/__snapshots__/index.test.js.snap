@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`With Snapshot Testing App shows "Hello world!" 1`] = `
+.c0 {
+  color: red;
+  font-size: 50px;
+}
+
 <div>
   <header>
     <nav>
@@ -26,9 +31,11 @@ exports[`With Snapshot Testing App shows "Hello world!" 1`] = `
       </a>
     </nav>
   </header>
-  <div>
+  <h1
+    className="c0"
+  >
     Hello World!
-  </div>
+  </h1>
   <footer>
     I am the footer!
   </footer>
